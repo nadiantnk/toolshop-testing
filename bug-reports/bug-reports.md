@@ -150,7 +150,7 @@
 <img width="1453" height="892" alt="3" src="https://github.com/user-attachments/assets/faca917a-0fe9-4c89-b3cb-075bec2fc101" />
 
 -------------
-## BUG-XXX: Опечатки в текстах интерфейса
+## BUG-007: Опечатки в текстах интерфейса
 
 | Поле | Значение |
 | --- | --- |
