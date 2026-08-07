@@ -181,6 +181,10 @@
 **Ожидаемый результат:**
 Тексты интерфейса без орфографических ошибок.
 
+**Вложения:**
+<img width="1342" height="629" alt="5" src="https://github.com/user-attachments/assets/1611dbd9-5a9b-4146-81f3-4eadd3506ee5" />
+<img width="1428" height="1033" alt="6" src="https://github.com/user-attachments/assets/f582a277-2779-48c2-b3b8-b07162a81f06" />
+
 -------------
 
 
