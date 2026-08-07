@@ -188,3 +188,29 @@
 -------------
 
 
+## BUG-008: GET /products/{id}/related возвращает 500 при некорректном id
+
+| Поле | Значение |
+| --- | --- |
+| **Компонент** | API, Products |
+| **Severity** | Major |
+| **Priority** | Medium |
+| **Окружение** | API https://api-with-bugs.practicesoftwaretesting.com, Swagger UI |
+| **Эндпоинт** | GET /products/{productId}/related |
+| **Воспроизводимость** | Всегда |
+
+**Предусловия:**
+Доступ к API (Swagger UI или curl).
+
+**Шаги воспроизведения:**
+1. Выполнить GET-запрос на /products/-4/related (некорректный отрицательный id).
+   `curl -X GET 'https://api-with-bugs.practicesoftwaretesting.com/products/-4/related' -H 'accept: application/json'`
+
+**Фактический результат:**
+Сервер возвращает 500 Internal Server Error, тело: { "message": "Server Error" }. Код 500 не описан в документации (Undocumented).
+
+**Ожидаемый результат:**
+Сервер возвращает 404 (ресурс не найден) или 400 (некорректный параметр) с понятным сообщением. Ответа 500 при валидируемом вводе быть не должно.
+
+-----------
+
