@@ -143,9 +143,10 @@
 **Фактический результат:**
 По запросу "long" найдено 5 товаров: Long Nose Pliers, Pliers, Claw Hammer, Cordless Drill 24V, Excavator. Слову "long" соответствует только Long Nose Pliers, остальные товары запросу не релевантны. 
 
-**Ожидаемый результат** 
+**Ожидаемый результат:** 
 Поиск возвращает соответствующие поиску, те "long".
 
 **Вложения:**
 <img width="1453" height="892" alt="3" src="https://github.com/user-attachments/assets/faca917a-0fe9-4c89-b3cb-075bec2fc101" />
 
+-------------
