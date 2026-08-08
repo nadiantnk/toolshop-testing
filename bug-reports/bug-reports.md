@@ -179,6 +179,8 @@
 | Пункт меню навигации | Contakt | Contact |
 | Поле сообщения (форма Contact) | Massage | Message |
 | Блок похожих товаров (карточка) | Reltded products | Related products |
+| Заголовок формы оформления заказа (Billing Address) | Blliling | Billing |
+| Заголовок формы оформления заказа (Billing Address) | Adress | Address |
 
 **Ожидаемый результат:**
 Тексты интерфейса без орфографических ошибок.
