@@ -215,3 +215,34 @@
 
 -----------
 
+## BUG-009: Пример успешного ответа (200) в документации GET /products/{id} описывает структуру бренда вместо товара
+| Поле | Значение |
+| --- | --- |
+| **Компонент** |	API, документация (Swagger) |
+| **Severity** |	Minor |
+| **Priority** | Low |
+| **Окружение** |	Swagger UI, https://api-with-bugs.practicesoftwaretesting.com/api/documentation |
+|**Эндпоинт**| 	GET /products/{productId} |
+| **URL** |	Swagger UI, https://api-with-bugs.practicesoftwaretesting.com/api/documentation |
+| **Воспроизводимость** | Всегда |
+
+**Предусловия:**
+Доступ к Swagger UI.
+
+**Шаги воспроизведения:**
+1. Открыть Swagger UI, эндпоинт GET /products/{productId}.
+2. В блоке Responses раскрыть код 200, посмотреть Example Value.
+3. В поле productId ввести 1, нажать Execute.
+4. Сравнить Example Value из документации с фактическим телом ответа.
+
+**Фактический результат:**
+Документированный пример для 200 содержит структуру объекта Brand: { "id": 0, "name": "new brand", "slug": "new-brand" }. Фактический ответ на id=1 содержит структуру товара: id, name («Combination Pliers»), description, price, category_id, brand_id, вложенные объекты product_image и category. Структура примера в документации не соответствует реальному ответу эндпоинта. Примеры для кодов 404 и 405 при этом корректны.
+
+**Ожидаемый результат:**
+Example Value для 200 отражает фактическую структуру товара, возвращаемую эндпоинтом (id, name, description, price, category, brand, product_image и т.д.).
+
+----------
+
+
+
+
