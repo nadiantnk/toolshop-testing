@@ -160,7 +160,7 @@
 | **Severity** | Trivial |
 | **Priority** | Low |
 | **Окружение** | Windows 11, Brave 1.93.132, Firefox 153.0.1 |
-| **URL** | https://with-bugs.practicesoftwaretesting.com/#/ |
+| **URL** | https://with-bugs.practicesoftwaretesting.com/#/ https://with-bugs.practicesoftwaretesting.com/#/checkout|
 | **Воспроизводимость** | Всегда |
 
 **Предусловия:**
